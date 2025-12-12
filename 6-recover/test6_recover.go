@@ -1,4 +1,4 @@
-/* 
+/*
 	recover错误拦截
 */
 
@@ -30,8 +30,7 @@ func main() {
 	}()
 
 	test(5)
-	
+
 	// 触发 panic
 	// panic("这是一个测试 panic")
 }
- 
