@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"net"
 	"sync"
 )
@@ -49,13 +50,34 @@ func (this *Server) handleConnection(conn net.Conn) {
 
 	this.BroadCast(user, "上线")
 
+	// [v0.3] 接收客户端发送的消息
+	go func() {
+		buf := make([]byte, 4096)
+		for {
+			n, err := conn.Read(buf)
+			if n == 0 {
+				this.BroadCast(user, "下线")
+				return
+			}
+
+			if err != nil && err != io.EOF {
+				fmt.Println("Conn Read err : ", err)
+				return
+			}
+
+			// 提取用户消息(去掉'\n')
+			msg := buf[:n-1]
+			this.BroadCast(user, string(msg))
+		}
+	}()
+
 	// 当前handler阻塞
 	select {}
 }
 
 // 9. 与8对应，channel有发就有收，新增监听广播的方法ListenMessager
 func (this *Server) ListenChMessage() {
-	deadlock_check()
+	// deadlock_check()
 	for {
 		msg := <-this.ChMessage
 
