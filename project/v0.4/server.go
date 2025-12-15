@@ -42,7 +42,7 @@ func (this *Server) BroadCast(user *User, msg string) {
 func (this *Server) handleConnection(conn net.Conn) {
 	// 处理连接的业务
 	// fmt.Println(("连接建立成功"))
-	user := NewUser(conn)
+	user := NewUser(conn, this)
 
 	this.MapMutex.Lock()
 	this.OnlineMap[user.Addr] = user
@@ -55,9 +55,9 @@ func (this *Server) handleConnection(conn net.Conn) {
 		buf := make([]byte, 4096)
 		for {
 			n, err := conn.Read(buf)
-			// 用户主动关闭连接
 			if n == 0 {
 				this.BroadCast(user, "下线")
+				delete(this.OnlineMap, user.Name)
 				return
 			}
 
@@ -68,7 +68,7 @@ func (this *Server) handleConnection(conn net.Conn) {
 
 			// 提取用户消息(去掉'\n')
 			msg := buf[:n-1]
-			this.BroadCast(user, string(msg))
+			user.DoMessage(string(msg))
 		}
 	}()
 
