@@ -1,3 +1,140 @@
+## 项目结构树
+.
+├── 10-struct
+│   ├── test10_struct2.go
+│   ├── test10_struct3.go
+│   └── test10_struct.go
+├── 11-interface
+│   ├── test11_interface2.go
+│   └── test11_interface.go
+├── 12-reflect
+│   ├── test12_reflect2.go
+│   ├── test12_reflect3go
+│   ├── test12_reflect4.go
+│   ├── test12_reflect5.go
+│   └── test12_reflect.go
+├── 13-goroutine
+│   ├── test13_goroutine2.go
+│   ├── test13_goroutine3.go
+│   └── test13_goroutine.go
+├── 14-channel
+│   ├── test14_channel2.go
+│   ├── test14_channel3.go
+│   ├── test14_channel4.go
+│   └── test14_channel.go
+├── 15-ws-gateway
+│   ├── main.go
+│   └── test.go
+├── 1-var
+│   └── test1_var.go
+├── 2-const
+│   └── test2_const .go
+├── 3-function
+│   └── test3_func.go
+├── 4-init
+│   ├── lib1
+│   │   └── lib1.go
+│   ├── lib2
+│   │   └── lib2.go
+│   └── test4_init.go
+├── 5-defer
+│   ├── test5_defer.exe
+│   └── test5_defer.go
+├── 6-recover
+│   └── test6_recover.go
+├── 7-array
+│   └── test7_array.go
+├── 8-slice
+│   ├── test8_slice2.go
+│   ├── test8_slice3.go
+│   └── test8_slice.go
+├── 9-map
+│   ├── test9_map2.go
+│   └── test9_map.go
+├── file.txt
+├── go.mod
+├── go.sum
+├── hello
+│   ├── hello.exe
+│   └── hello.go
+├── LICENSE
+├── project
+│   ├── v0.1
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   └── server.go
+│   ├── v0.2
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.3
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.4
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.5
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.6
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.7
+│   │   ├── deadlock_check.go
+│   │   ├── main.go
+│   │   ├── README.md
+│   │   ├── server
+│   │   ├── server.go
+│   │   └── user.go
+│   ├── v0.8
+│   │   ├── Client
+│   │   │   ├── client
+│   │   │   └── client.go
+│   │   ├── README.md
+│   │   └── Server
+│   │       ├── deadlock_check.go
+│   │       ├── main.go
+│   │       ├── server
+│   │       ├── server.go
+│   │       └── user.go
+│   └── v0.9
+│       ├── Client
+│       │   ├── client
+│       │   └── client.go
+│       ├── README.md
+│       ├── Server
+│       │   ├── deadlock_check.go
+│       │   ├── main.go
+│       │   ├── server
+│       │   ├── server.go
+│       │   └── user.go
+│       └── tools
+│           └── observability.go
+├── README.md
+└── todolist.md
+
+33 directories, 99 files
+
 ## GO 学习笔记（基于个人 GOSTUDY 仓库）
 
 - **仓库地址**：[`https://github.com/suinis/GOSTUDY`](https://github.com/suinis/GOSTUDY)  
