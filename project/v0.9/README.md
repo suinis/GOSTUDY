@@ -1,4 +1,4 @@
-# HOW TO USE
+# 使用指南
 
 ## 编译并启动 server
 ```bash
@@ -27,7 +27,7 @@ go build -o server server.go main.go user.go deadlock_check.go
     curl http://127.0.0.1:6060/debug/vars
     ```
 
-## TIPS
+# 更改日志
 - [v0.9] 新增 pprof 性能分析工具
 - [v0.9] 新增观测端口（默认 `127.0.0.1:6060`），集成 pprof/trace/expvar
 - benchstat 对比示例：
