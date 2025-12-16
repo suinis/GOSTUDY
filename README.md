@@ -1,34 +1,11 @@
 ## 项目结构树
+
+```
 .
-├── 10-struct
-│   ├── test10_struct2.go
-│   ├── test10_struct3.go
-│   └── test10_struct.go
-├── 11-interface
-│   ├── test11_interface2.go
-│   └── test11_interface.go
-├── 12-reflect
-│   ├── test12_reflect2.go
-│   ├── test12_reflect3go
-│   ├── test12_reflect4.go
-│   ├── test12_reflect5.go
-│   └── test12_reflect.go
-├── 13-goroutine
-│   ├── test13_goroutine2.go
-│   ├── test13_goroutine3.go
-│   └── test13_goroutine.go
-├── 14-channel
-│   ├── test14_channel2.go
-│   ├── test14_channel3.go
-│   ├── test14_channel4.go
-│   └── test14_channel.go
-├── 15-ws-gateway
-│   ├── main.go
-│   └── test.go
 ├── 1-var
 │   └── test1_var.go
 ├── 2-const
-│   └── test2_const .go
+│   └── test2_const.go
 ├── 3-function
 │   └── test3_func.go
 ├── 4-init
@@ -51,13 +28,34 @@
 ├── 9-map
 │   ├── test9_map2.go
 │   └── test9_map.go
-├── file.txt
-├── go.mod
-├── go.sum
+├── 10-struct
+│   ├── test10_struct2.go
+│   ├── test10_struct3.go
+│   └── test10_struct.go
+├── 11-interface
+│   ├── test11_interface2.go
+│   └── test11_interface.go
+├── 12-reflect
+│   ├── test12_reflect2.go
+│   ├── test12_reflect3.go
+│   ├── test12_reflect4.go
+│   ├── test12_reflect5.go
+│   └── test12_reflect.go
+├── 13-goroutine
+│   ├── test13_goroutine2.go
+│   ├── test13_goroutine3.go
+│   └── test13_goroutine.go
+├── 14-channel
+│   ├── test14_channel2.go
+│   ├── test14_channel3.go
+│   ├── test14_channel4.go
+│   └── test14_channel.go
+├── 15-ws-gateway
+│   ├── main.go
+│   └── test.go
 ├── hello
 │   ├── hello.exe
 │   └── hello.go
-├── LICENSE
 ├── project
 │   ├── v0.1
 │   │   ├── main.go
@@ -130,10 +128,15 @@
 │       │   └── user.go
 │       └── tools
 │           └── observability.go
+├── file.txt
+├── go.mod
+├── go.sum
+├── LICENSE
 ├── README.md
 └── todolist.md
 
 33 directories, 99 files
+```
 
 ## GO 学习笔记（基于个人 GOSTUDY 仓库）
 
