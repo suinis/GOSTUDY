@@ -6,5 +6,5 @@
 
 # DISCRIPTION
 ```
-    基础server服务构建
+    [v0.1] 基础server服务构建
 ```
