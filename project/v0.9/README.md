@@ -1,17 +1,28 @@
 # HOW TO USE
+1. 编译启动server:
 ```
     go build -o server server.go main.go user.go deadlock_check.go 
     ./server
-
-    可视化pprof地址：http://127.0.0.1:6060/debug/pprof/
-    命令行pprof
-        eg：
-        - CPU:   go tool pprof http://127.0.0.1:6060/debug/pprof/profile?seconds=20
-        - Heap:  go tool pprof http://127.0.0.1:6060/debug/pprof/heap
-        - Trace: curl http://127.0.0.1:6060/debug/pprof/trace?seconds=5 -o trace.out
-                go tool trace trace.out
-        - Vars:  curl http://127.0.0.1:6060/debug/vars
 ```
+2. 可视化pprof地址：http://127.0.0.1:6060/debug/pprof/
+   or 命令行pprof
+        - CPU:   
+        ```
+            go tool pprof http://127.0.0.1:6060/debug/pprof/profile?seconds=20
+        ```
+        - Heap:  
+        ```
+            go tool pprof http://127.0.0.1:6060/debug/pprof/heap
+        ```
+        - Trace: 
+        ```
+            curl http://127.0.0.1:6060/debug/pprof/trace?seconds=5 -o trace.out
+            go tool trace trace.out
+        ```
+        - Vars:  
+        ```
+            curl http://127.0.0.1:6060/debug/vars
+        ```
 
 # TIPS
 ```
