@@ -1,5 +1,3 @@
-_Exported on 2025/12/16 at GMT+8 16:41:27 from Cursor (2.1.50)_
-
 ## GO 学习笔记（基于个人 GOSTUDY 仓库）
 
 - **仓库地址**：[`https://github.com/suinis/GOSTUDY`](https://github.com/suinis/GOSTUDY)  
