@@ -52,7 +52,7 @@ func (this *Server) handleConnection(conn net.Conn) {
 
 	// [v0.3] 接收客户端发送的消息
 	go func() {
-		buf := make([]byte, 4096)
+		buf := make([]byte, 4096*4096)
 		for {
 			n, err := conn.Read(buf)
 			if n == 0 {
