@@ -1,6 +1,6 @@
 ## 项目结构树
 
-```
+```bash
 .
 ├── 1-var
 │   └── test1_var.go
@@ -119,6 +119,8 @@
 │       ├── Client
 │       │   ├── client
 │       │   └── client.go
+│       ├── cpu.pprof
+│       ├── heap.pprof
 │       ├── README.md
 │       ├── Server
 │       │   ├── deadlock_check.go
@@ -135,7 +137,7 @@
 ├── README.md
 └── todolist.md
 
-33 directories, 99 files
+33 directories, 101 files
 ```
 
 ## GO 学习笔记（基于个人 GOSTUDY 仓库）
