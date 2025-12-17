@@ -7,6 +7,12 @@ go build -o server .
 ./server
 ```
 
+## 模拟连接
+```bash
+  # 模拟1个线程使用1个连接，持续30s
+  wrk -t1 -c1 -d30s http://localhost:8888/
+```
+
 ## 观测与分析
 
 ### 方式一：浏览器访问（推荐，无需额外安装）
