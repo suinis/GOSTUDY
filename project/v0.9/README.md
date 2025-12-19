@@ -76,7 +76,7 @@ brew install graphviz
   go tool pprof -http=:8080 http://127.0.0.1:6060/debug/pprof/heap
   # 然后在浏览器中打开 http://localhost:8080
   ```
-
+4
 - **CPU 分析**
   ```bash
   go tool pprof -http=:8080 http://127.0.0.1:6060/debug/pprof/profile?seconds=30
