@@ -5,4 +5,5 @@
     4. go.mod replace修改模块依赖关系
     5. go调试器delve
     6. Metrics指标监控（QPS、延迟、错误率、GC等）
+    7. Zap开源日志框架
 ```
